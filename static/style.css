@@ -17,3 +17,18 @@ body {
 html {
     background-color: #222;
 }
+
+a {
+    color: #14dcdc;
+}
+
+a:visited
+{
+    color: #bb85b8;
+}
+
+select, option, button {
+    font-family: 'Inclusive Sans', sans-serif;
+    background-color: #444;
+    color: #ddd;
+}
