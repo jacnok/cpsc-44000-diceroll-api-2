@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto+Mono:wght@700&display=swap');
+
+h1 {
+    
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+
+    color: #ddd;
+}
+
+body {
+    font-family: 'Inclusive Sans', sans-serif;
+    padding: 2%;
+    color: #85c689
+}
+
+html {
+    background-color: #222;
+}
