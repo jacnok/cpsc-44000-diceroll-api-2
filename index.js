@@ -26,11 +26,11 @@ app.get("/api/v1", (req, res) => {
     let roller = [0,0,0,0,0,0]
 
 
-    body[1] == "true" ? roller[1] = randGen() : roller[1] = 0;
-    body[2] == "true" ? roller[2] = randGen() : roller[2] = 0;
-    body[3] == "true" ? roller[3] = randGen() : roller[3] = 0;
-    body[4] == "true" ? roller[4] = randGen() : roller[4] = 0;
-    body[5] == "true" ? roller[5] = randGen() : roller[5] = 0;
+    // body[1] == "true" ? roller[1] = randGen() : roller[1] = 0;
+    // body[2] == "true" ? roller[2] = randGen() : roller[2] = 0;
+    // body[3] == "true" ? roller[3] = randGen() : roller[3] = 0;
+    // body[4] == "true" ? roller[4] = randGen() : roller[4] = 0;
+    // body[5] == "true" ? roller[5] = randGen() : roller[5] = 0;
 
     res.json(roller);
 
