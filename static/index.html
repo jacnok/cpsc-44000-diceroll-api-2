@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-<title>Node on Azure</title>
+<title>Sprint 3 - Dice Roller API</title>
+
+<script>
+    async function fetchTestRoller()
+    {
+        rand = (Math.floor(Math.random() * 10000)) + 1;
+        fetchString = "/api/v1/test";
+		const response = await fetch(fetchString);
+		const responseText = await response.text();
+		document.getElementById("replace_me").innerHTML = responseText;
+    }
+    fetchTestRoller()
+</script>
+
 </head>
 <body>
-<h1>Node.js and Express Hosted on Microsoft Azure Template</h1>
-<p>This repository serves as a template that can be used to create a Node.js and Express based website that can easily
-be hosted on Microsoft Azure.</p>
-
-Additional application functionality includes:<br />
-<a href="fetching-from-server.html">Accessing Node.js Server-Side Application Programming Interfaces (APIs)</a><br />
-<a href="fetching-remote-dog-breeds.html">Accessing Remote Application Programming Interfaces (APIs)</a>
-
-<p>
-    <a href="https://lu-f23-portfolio-jac.azurewebsites.net/">return to the portfolio -></a>
+<p id = "replace_me" onclick="fetchTestRoller()">test
 </p>
 </body>
 </html>
